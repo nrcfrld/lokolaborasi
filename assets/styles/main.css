@@ -312,7 +312,7 @@ footer.lokal-footer .lokal-footer-right {
 }
 
 #hero-carousel .hero-carousel-item {
-  padding-top: 220px;
+  padding-top: 250px;
   position: relative;
   height: 678px;
 }
@@ -359,7 +359,8 @@ footer.lokal-footer .lokal-footer-right {
 }
 
 #hero-carousel .hero-carousel-item .captions p {
-  font-weight: 600px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .hero-section {

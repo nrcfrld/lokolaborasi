@@ -1,6 +1,6 @@
 #hero-carousel {
 	.hero-carousel-item {
-		padding-top: 220px;
+		padding-top: 250px;
 		position: relative;
 
 		&::after {
@@ -44,7 +44,8 @@
 			}
 
 			p {
-				font-weight: 600px;
+				font-weight: 500;
+				font-size: 1rem;
 			}
 		}
 
