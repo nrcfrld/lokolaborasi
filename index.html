@@ -29,9 +29,9 @@
 		<title>Lokaloborasi - Homepage</title>
 	</head>
 	<body>
-		<header class="lokal-header bg-dark">
+		<header class="lokal-header">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<nav class="navbar navbar-expand-lg navbar-dark">
 					<div class="container-fluid">
 						<a class="navbar-brand" href="/">
 							<img
@@ -41,7 +41,8 @@
 							/>
 						</a>
 						<button
-							class="navbar-toggler"
+							id="ChangeToggle"
+							class="navbar-toggler border-0 collapsed"
 							type="button"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarSupportedContent"
@@ -49,22 +50,31 @@
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span class="navbar-toggler-icon"></span>
+						<span class="icon-bar top-bar"></span>
+						<span class="icon-bar middle-bar"></span>
+						<span class="icon-bar bottom-bar"></span>
+							<!-- <span id="navbar-hamburger" class="navbar-toggler-icon"></span>
+							<svg id="navbar-close" class="close-icon d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+								<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+							</svg> -->
 						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div class="collapse navbar-collapse mt-4 mt-lg-4 pb-5 pb-lg-0" id="navbarSupportedContent">
 							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									<a class="nav-link text-uppercase" href="about-us.html">Tentang Kami</a>
+									<hr class="d-block d-lg-none">
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Cuplikan Kolaborasi</a>
+									<a class="nav-link text-uppercase" href="#">Cuplikan Kolaborasi</a>
+									<hr class="d-block d-lg-none">
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="collaborations.html">Catatan Kolaborasi</a>
+									<a class="nav-link text-uppercase" href="collaborations.html">Catatan Kolaborasi</a>
+									<hr class="d-block d-lg-none">
 								</li>
 							</ul>
 							<div class="ms-3">
-								<a href="login.html" class="btn btn-primary fw-bold d-block text-uppercase"
+								<a href="login.html" class="btn btn-primary fw-bold d-block text-uppercase btn-cta"
 									>Ruang Virtual</a
 								>
 							</div>
@@ -72,7 +82,6 @@
 					</div>
 				</nav>
 			</div>
-			<!-- <img class="wave" src="./assets/images/wave.png" /> -->
 		</header>
 		<main>
 			<section id="hero">
@@ -312,6 +321,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script src="./assets/modules/OwlCarousel2-2.3.4_2/owl.carousel.min.js"></script>
+		<script src="./assets/scripts/main.js"></script>
 		<script>
 			$(document).ready(function () {
 				$("#hero-carousel").owlCarousel({
