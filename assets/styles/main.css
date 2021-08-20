@@ -90,6 +90,10 @@ header.lokal-header .navbar-nav .nav-item a.nav-link {
   }
 }
 
+header.lokal-header .navbar-nav .nav-item a.nav-link.active, header.lokal-header .navbar-nav .nav-item a.nav-link:hover {
+  color: #f0c131;
+}
+
 header.lokal-header .navbar-nav .nav-item hr {
   background-color: #947536;
   height: 2px;
