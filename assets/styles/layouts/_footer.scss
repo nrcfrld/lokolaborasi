@@ -1,0 +1,22 @@
+footer.lokal-footer {
+	position: relative;
+	bottom: 0;
+	font-family: "Roboto Condensed", sans-serif;
+	color: #fff;
+	background-color: #801420;
+
+	.lokal-footer-link {
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+
+	.lokal-footer-right {
+		font-size: 14px;
+
+		@include medium {
+			font-size: 16px;
+		}
+	}
+}

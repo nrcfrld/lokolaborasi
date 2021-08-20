@@ -1,0 +1,27 @@
+header.lokal-header {
+	// background-color: #222;
+	position: relative;
+	z-index: 9;
+
+	&::after {
+		content: "";
+		z-index: 10;
+		width: calc(100% + 10px);
+		height: 16px;
+		bottom: -10px;
+		position: absolute;
+		left: 0;
+		background-image: url("/assets/images/wave.png");
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	.navbar-nav {
+		.nav-item {
+			a.nav-link {
+				color: white;
+				font-weight: 700;
+			}
+		}
+	}
+}

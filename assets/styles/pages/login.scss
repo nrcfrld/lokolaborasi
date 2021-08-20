@@ -1,0 +1,29 @@
+@import "../base/variables";
+
+body {
+	min-height: 100vh;
+	background-image: url("/assets/images/pattern.jpg");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+
+	// ::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	z-index: 2;
+	// 	display: block;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	left: 0;
+	// 	background-image: url("/assets/images/pattern.svg");
+	// }
+}
+
+.login {
+	background-color: $secondary-color;
+	padding: 36px 24px;
+	border-radius: 12px;
+	max-width: 450px;
+}

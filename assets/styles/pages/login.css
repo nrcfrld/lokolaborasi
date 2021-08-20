@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  background-image: url("/assets/images/pattern.jpg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.login {
+  background-color: #947536;
+  padding: 36px 24px;
+  border-radius: 12px;
+  max-width: 450px;
+}
+/*# sourceMappingURL=login.css.map */

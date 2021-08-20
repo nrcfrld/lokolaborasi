@@ -1,0 +1,33 @@
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/global";
+
+@import "./layouts/header";
+@import "./layouts/footer";
+
+@import "./components/input";
+@import "./components/button";
+@import "./components/card";
+@import "./components/hero-carousel";
+@import "./components/hero-section";
+@import "./components/main-section";
+
+@import "./pages/index";
+
+.bg {
+	&-secondary {
+		background-color: $secondary-color !important;
+	}
+
+	&-info {
+		background-color: #3f342e !important;
+	}
+
+	&-primary {
+		background-color: $primary-color !important;
+	}
+
+	&-gray {
+		background-color: #a3a3a3 !important;
+	}
+}

@@ -1,0 +1,39 @@
+.btn {
+	border-radius: 10px;
+
+	&.btn-primary {
+		background-color: $primary-color;
+		border-color: $primary-color;
+
+		&:hover {
+			background-color: darken($color: $primary-color, $amount: 5);
+		}
+	}
+
+	&.btn-secondary {
+		background-color: $secondary-color;
+		border-color: $secondary-color;
+
+		&:hover {
+			background-color: darken($color: $secondary-color, $amount: 5);
+		}
+	}
+
+	&.btn-info {
+		background-color: #3f342e;
+		border-color: #3f342e;
+		color: white;
+
+		&:hover {
+			background-color: darken($color: #3f342e, $amount: 5);
+			color: white;
+		}
+	}
+
+	.next-chev svg {
+		width: 8px;
+		height: 8px;
+		stroke: white;
+		stroke-width: 1px;
+	}
+}
