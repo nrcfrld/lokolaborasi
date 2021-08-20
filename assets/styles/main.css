@@ -208,7 +208,7 @@ footer.lokal-footer .lokal-footer-right {
 }
 
 #hero-carousel .hero-carousel-item::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   width: 100%;
@@ -239,7 +239,13 @@ footer.lokal-footer .lokal-footer-right {
 
 #hero-carousel .hero-carousel-item .captions h2 {
   font-weight: 800;
-  font-size: 40px;
+  font-size: 36px;
+}
+
+@media (min-width: 768px) {
+  #hero-carousel .hero-carousel-item .captions h2 {
+    font-size: 40px;
+  }
 }
 
 #hero-carousel .hero-carousel-item .captions p {

@@ -1,45 +1,53 @@
-#hero-carousel{
-  .hero-carousel-item{
-    padding-top: 220px;
-    position: relative;
+#hero-carousel {
+	.hero-carousel-item {
+		padding-top: 220px;
+		position: relative;
 
-    &::after{
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: -1px;
-      background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0,0,0,0));
-      z-index: 2;
-    }
+		&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: -1px;
+			background: linear-gradient(
+				to right,
+				rgba(0, 0, 0, 0.7),
+				rgba(0, 0, 0, 0)
+			);
+			z-index: 2;
+		}
 
-    .background{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 0;
-      object-fit: cover;
-    }
+		.background {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			object-fit: cover;
+		}
 
-    .captions{
-      color: white;
-      position: relative;
-      z-index: 9;
-      max-width: 500px;
+		.captions {
+			color: white;
+			position: relative;
+			z-index: 9;
+			max-width: 500px;
 
-      h2{
-        font-weight: 800;
-        font-size: 40px;
-      }
+			h2 {
+				font-weight: 800;
+				font-size: 36px;
 
-      p{
-        font-weight: 600px;
-      }
-    }
+				@include small {
+					font-size: 40px;
+				}
+			}
 
-    height: 678px;
-  }
+			p {
+				font-weight: 600px;
+			}
+		}
+
+		height: 678px;
+	}
 }
