@@ -31,8 +31,15 @@ header.lokal-header {
 	.navbar-collapse {
 		min-height: 85vh;
 
+		@include medium {
+			min-height: unset;
+		}
+
 		&.collapse {
 			height: 85vh;
+			@include medium {
+				height: unset;
+			}
 		}
 
 		&.collapsing {

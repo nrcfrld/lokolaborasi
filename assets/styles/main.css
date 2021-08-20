@@ -53,8 +53,20 @@ header.lokal-header .navbar-collapse {
   min-height: 85vh;
 }
 
+@media (min-width: 992px) {
+  header.lokal-header .navbar-collapse {
+    min-height: unset;
+  }
+}
+
 header.lokal-header .navbar-collapse.collapse {
   height: 85vh;
+}
+
+@media (min-width: 992px) {
+  header.lokal-header .navbar-collapse.collapse {
+    height: unset;
+  }
 }
 
 header.lokal-header .navbar-collapse.collapsing {

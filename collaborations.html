@@ -24,9 +24,9 @@
 		<title>Lokaloborasi - About Us</title>
 	</head>
 	<body>
-		<header class="lokal-header bg-dark">
+		<header class="lokal-header">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<nav class="navbar navbar-expand-lg navbar-dark">
 					<div class="container-fluid">
 						<a class="navbar-brand" href="/">
 							<img
@@ -36,7 +36,8 @@
 							/>
 						</a>
 						<button
-							class="navbar-toggler"
+							id="ChangeToggle"
+							class="navbar-toggler border-0 collapsed"
 							type="button"
 							data-bs-toggle="collapse"
 							data-bs-target="#navbarSupportedContent"
@@ -44,26 +45,38 @@
 							aria-expanded="false"
 							aria-label="Toggle navigation"
 						>
-							<span class="navbar-toggler-icon"></span>
+							<span class="icon-bar top-bar"></span>
+							<span class="icon-bar middle-bar"></span>
+							<span class="icon-bar bottom-bar"></span>
 						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<div
+							class="collapse navbar-collapse mt-4 mt-lg-4 pb-5 pb-lg-0"
+							id="navbarSupportedContent"
+						>
 							<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 								<li class="nav-item">
-									<a class="nav-link" href="about-us.html">Tentang Kami</a>
+									<a class="nav-link text-uppercase" href="about-us.html"
+										>Tentang Kami</a
+									>
+									<hr class="d-block d-lg-none" />
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Cuplikan Kolaborasi</a>
+									<a class="nav-link text-uppercase" href="#"
+										>Cuplikan Kolaborasi</a
+									>
+									<hr class="d-block d-lg-none" />
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="collaborations.html"
+									<a class="nav-link text-uppercase" href="collaborations.html"
 										>Catatan Kolaborasi</a
 									>
+									<hr class="d-block d-lg-none" />
 								</li>
 							</ul>
 							<div class="ms-3">
 								<a
 									href="login.html"
-									class="btn btn-primary fw-bold d-block text-uppercase"
+									class="btn btn-primary fw-bold d-block text-uppercase btn-cta"
 									>Ruang Virtual</a
 								>
 							</div>
@@ -71,7 +84,6 @@
 					</div>
 				</nav>
 			</div>
-			<!-- <img class="wave" src="./assets/images/wave.png" /> -->
 		</header>
 		<main>
 			<section class="hero-section">
